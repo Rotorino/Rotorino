@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "login": "Rotorino",
+  "seed": "#806DB1",
+  "seedFromAvatar": false,
+  "scheme": "tonalSpot",
+  "motion": true,
+  "iconFill": true,
+  "order": [
+    "hero",
+    "socials",
+    "about",
+    "stack",
+    "projects",
+    "wave",
+    "stats",
+    "streak",
+    "buttons"
+  ],
+  "hidden": [
+    "streak"
+  ],
+  "hero": {
+    "greeting": "Я Никитка",
+    "name": "Rotorino",
+    "subtitle": "Rotor - кусок вертолёта",
+    "typing": true,
+    "avatarShape": "pill",
+    "chips": [
+      {
+        "icon": "location_on",
+        "label": "Russia, Krasnodar"
+      },
+      {
+        "icon": "code",
+        "label": "LLM & AI"
+      }
+    ]
+  },
+  "about": {
+    "title": "Обо мне:",
+    "items": [
+      {
+        "icon": "brand:pipecat",
+        "label": "Кошка"
+      },
+      {
+        "icon": "rocket_launch",
+        "label": "Груша"
+      },
+      {
+        "icon": "widgets",
+        "label": "Резина"
+      }
+    ]
+  },
+  "stack": {
+    "title": "На чем пишу",
+    "groups": [
+      {
+        "title": "База",
+        "items": [
+          {
+            "icon": "brand:python",
+            "label": "Python"
+          },
+          {
+            "icon": "brand:dotnet",
+            "label": "C#"
+          },
+          {
+            "icon": "brand:javascript",
+            "label": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Тулзы",
+        "items": [
+          {
+            "icon": "brand:git",
+            "label": "Git"
+          },
+          {
+            "icon": "brand:docker",
+            "label": "Docker"
+          },
+          {
+            "icon": "brand:githubactions",
+            "label": "GitHub Actions"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "source": "manual",
+    "repos": [
+      "ACatalog",
+      "ALTGnomeWiki"
+    ],
+    "overrides": {},
+    "empty": "No description yet.",
+    "fork": "Fork"
+  },
+  "stats": {
+    "title": "GitHub activity",
+    "stars": "Stars earned",
+    "contributions": "Contributions this year",
+    "repos": "Public repos",
+    "followers": "Followers",
+    "calendar": "Last 21 days",
+    "weekdays": "SMTWTFS",
+    "languages": "Languages across my repositories",
+    "showLanguages": true
+  },
+  "streak": {
+    "title": "Streak",
+    "current": "Current streak",
+    "longest": "Longest this year",
+    "days": "days"
+  },
+  "socials": {
+    "items": [
+      {
+        "icon": "brand:discord",
+        "url": "https://discord.com/users/566953702439649300"
+      },
+      {
+        "icon": "link",
+        "url": "https://phystenia.life"
+      },
+      {
+        "icon": "brand:steam",
+        "url": "https://steamcommunity.com/profiles/76561198966614340"
+      }
+    ],
+    "variant": "chip",
+    "fill": "tonal",
+    "card": true
+  },
+  "buttons": {
+    "items": []
+  }
+}
