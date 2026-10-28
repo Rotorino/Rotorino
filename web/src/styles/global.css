@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,400,1,0&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Press+Start+2P&family=Unbounded:wght@500;600;700&display=swap');
 
@@ -512,3 +514,125 @@ html.custom-cursor-active, html.custom-cursor-active * { cursor: none !important
   .social-link { grid-column: span 2; }
   .social-link:nth-last-child(-n + 2) { grid-column: span 3; }
 }
+
+/* Ritoka's moonlit garden: the existing media remains visible under the scene. */
+:root { color: #eee8f2; background: #09070c; }
+html { background: #09070c; }
+.page-background { filter: saturate(.45) brightness(.55); }
+.background-overlay { background: linear-gradient(90deg, rgba(12,8,17,.45), rgba(12,8,17,.10) 50%, rgba(12,8,17,.45)), linear-gradient(0deg, rgba(9,6,14,.4), transparent 35%); }
+.garden-flower { position: fixed; bottom: -3vh; width: clamp(110px, 15vw, 250px); height: min(58vh, 560px); z-index: -2; pointer-events: none; background: url('/garden/physostegia.png') center bottom / contain no-repeat; opacity: .72; transform-origin: 50% 100%; animation: garden-sway 8s ease-in-out infinite alternate; }
+.garden-flower-left { left: max(1vw, calc(50% - 530px)); transform: rotate(-7deg); }
+.garden-flower-right { right: max(1vw, calc(50% - 530px)); transform: scaleX(-1) rotate(-7deg); animation-delay: -4s; }
+@keyframes garden-sway { from { translate: 0 0; } to { translate: 4px -4px; } }
+.identity-card { background: rgba(13, 9, 18, .94); border-color: #8a7999; box-shadow: 0 16px 50px rgba(0,0,0,.4); }
+.identity-card::before, .identity-card::after { width: 48px; height: 48px; border-color: #dfd0e7; filter: drop-shadow(0 0 5px rgba(194,156,233,.4)); }
+.avatar-frame { border-color: #d7c8df; box-shadow: 0 0 0 3px #211a2b, 0 0 0 4px #8a7897; transform: none; }
+.avatar-frame img { filter: saturate(.7) contrast(1.05); }
+.avatar-frame i { background: #d8c5e8; border-color: #100b15; }
+.identity-copy h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: clamp(52px, 7vw, 86px); line-height: .82; letter-spacing: -.025em; color: #e4d5ed; text-shadow: 0 0 22px rgba(182,143,212,.22); }
+.identity-copy p { color: #c4b3cb; }
+.location-badge, .card-rule, .panel-kicker, .card-footer, .calendar-months, .calendar-weekdays, .calendar-legend { color: #b4a1bc; }
+.card-rule { border-color: #64556d; }
+.social-links { border-color: #514558; }
+.social-link { background: rgba(22,16,27,.76); border-color: #514558; }
+.social-link img { filter: grayscale(1) sepia(.25) hue-rotate(220deg) brightness(1.35); }
+.social-copy small, .social-arrow, .track-copy small { color: #b8a8bf; }
+.panel { border-color: #554a60; background: rgba(14,10,18,.88); }
+.github-heading h2, .github-panel > h2 { font-family: 'Cormorant Garamond', Georgia, serif; color: #d5b9e5; font-size: 27px; letter-spacing: 0; }
+.contribution-day, .calendar-legend i { background: #28212f; }
+.level-1 { background: #4b3c56 !important; }.level-2 { background: #725d80 !important; }.level-3 { background: #a28ab2 !important; }.level-4 { background: #d7bee5 !important; }
+.languages { border-color: #514558; }
+.language-strip span { background: #bda0d0; }
+input[type='range']::-webkit-slider-thumb { background: #e1c9ef; }
+input[type='range']::-moz-range-thumb { background: #e1c9ef; }
+.timeline-row input[type='range']::-webkit-slider-runnable-track { background: linear-gradient(to right, #bb9dd1 0 var(--progress-fill), #514456 var(--progress-fill) 100%); }
+.timeline-row input[type='range']::-moz-range-progress { background: #bb9dd1; }
+input.volume-slider::-webkit-slider-runnable-track { background: linear-gradient(to top, #bb9dd1 0 var(--volume-fill), #514456 var(--volume-fill) 100%); }
+input.volume-slider::-moz-range-progress { background: #bb9dd1; }
+.entry-screen { background: #0c0811; }
+.entry-clock { color: #e5d8eb; font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; letter-spacing: -.04em; }
+@keyframes logo-color { 0%,100% { background-color: #e5d8eb; } 50% { background-color: #a783c1; } }
+@media (hover: hover) and (pointer: fine) {
+  .social-link:hover { background: #302238; border-color: #b9a4c4; color: #f5ebfa; }
+  .social-link:hover small, .social-link:hover .social-arrow { color: #e1cfe8; }
+  .icon-button:hover { background: #302238; border-color: #b9a4c4; }
+}
+@media (max-width: 720px) { .garden-flower { opacity: .35; width: 100px; } .garden-flower-left { left: -35px; } .garden-flower-right { right: -35px; } }
+@media (max-width: 440px) { .identity-copy h1 { font-size: clamp(43px, 12vw, 58px); } }
+@media (prefers-reduced-motion: reduce) { .garden-flower { animation: none; } }
+.social-link img, .social-link:hover img { filter: brightness(0) invert(.82) sepia(.15) hue-rotate(225deg); }
+.garden-crest { position: absolute; top: -13px; left: 50%; translate: -50% 0; padding: 0 9px; color: #d9c8e2; background: #100b15; font: 26px/1 'Cormorant Garamond', Georgia, serif; pointer-events: none; text-shadow: 0 0 9px rgba(203,174,225,.5); }
+
+/* Layered silver, flowers and an asymmetric reading position. */
+@media (min-width: 1050px) {
+  .page-shell { place-items: center start; padding-left: clamp(74px, 7.4vw, 150px); padding-right: 36px; }
+  .identity-card { width: min(720px, 58vw); }
+  .garden-flower-left { left: -2vw; }
+  .garden-flower-right { right: 5vw; }
+}
+.identity-card { background: linear-gradient(135deg, rgba(21,14,26,.96), rgba(9,7,13,.95) 65%); border-color: #8c7e96; }
+.identity-card::before, .identity-card::after { width: 52px; height: 52px; z-index: 1; }
+.profile-header { grid-template-columns: 116px minmax(0, 1fr) auto; gap: 24px; }
+.avatar-frame { width: 110px; aspect-ratio: 1; border: 0; background: transparent; box-shadow: none; }
+.avatar-frame img { position: absolute; inset: 7%; width: 86%; height: 86%; object-fit: cover; border: 0; }
+.avatar-frame::before, .avatar-frame::after { content: ''; position: absolute; pointer-events: none; background-position: center; background-repeat: no-repeat; background-size: contain; }
+.avatar-frame::after { inset: -13%; background-image: url('/garden/avatar-floral-frame.png'); }
+.avatar-frame i { display: none; }
+.identity-copy h1 { font-family: 'Cinzel Decorative', 'Cormorant Garamond', Georgia, serif; font-size: clamp(40px, 5.4vw, 71px); line-height: 1; letter-spacing: -.035em; color: #e9ddf1; }
+.identity-copy p { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 15px; font-style: italic; font-weight: 500; letter-spacing: .035em; }
+.card-rule { position: relative; border-top: 0; }
+.card-rule::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, #6b5c74, #c9b4d2 50%, #6b5c74); pointer-events: none; }
+.card-rule::after { content: ''; position: absolute; top: 0; left: 50%; width: 7px; height: 7px; border: 1px solid #d8c5df; background: #1a1120; transform: translate(-50%, -50%) rotate(45deg); pointer-events: none; }
+.panel { position: relative; background: linear-gradient(125deg, rgba(22,15,28,.95), rgba(10,8,14,.96)); box-shadow: none; }
+.panel::after { content: ''; position: absolute; top: -7px; right: -7px; width: 30px; height: 30px; background: url('/garden/avatar-silver-frame.png') top right / 85px 85px no-repeat; pointer-events: none; opacity: .85; }
+.garden-bouquet { position: fixed; z-index: -1; pointer-events: none; width: clamp(180px, 26vw, 420px); height: clamp(220px, 50vh, 520px); bottom: -6vh; background: url('/garden/garden-bouquet.png') left bottom / contain no-repeat; opacity: .82; filter: drop-shadow(0 4px 18px rgba(0,0,0,.55)); transform-origin: bottom left; animation: bouquet-breath 9s ease-in-out infinite alternate; }
+.garden-bouquet-left { left: -3vw; }
+.garden-bouquet-right { right: -3vw; transform: scaleX(-1); animation-delay: -5s; }
+@keyframes bouquet-breath { to { rotate: 1.5deg; } }
+@media (max-width: 1049px) { .page-shell { place-items: center; } .garden-bouquet { opacity: .35; } }
+@media (max-width: 720px) { .page-shell { place-items: start center; } .profile-header { grid-template-columns: 90px minmax(0,1fr); gap: 12px; } .avatar-frame { width: 86px; } .garden-bouquet { width: 145px; height: 220px; opacity: .25; } }
+@media (max-width: 440px) { .identity-copy h1 { font-size: clamp(32px, 9vw, 48px); } .identity-copy p { font-size: 13px; } }
+@media (prefers-reduced-motion: reduce) { .garden-bouquet { animation: none; } }
+
+/* One ornamental frame and one divider: no nested outlines. */
+.avatar-frame::before { content: none; }
+.identity-card::before, .identity-card::after { content: none; }
+.panel::after { content: none; }
+.page-background { filter: saturate(.75) brightness(.72); }
+
+/* Mobile: the profile becomes a full-width page instead of a nested card. */
+@media (max-width: 720px) {
+  .page-shell { display: block; min-height: 100svh; padding: 0; overflow-x: clip; }
+  .background-overlay { background: linear-gradient(180deg, rgba(10,7,15,.64), rgba(10,7,15,.86) 38%, rgba(10,7,15,.92)); }
+  .identity-card { width: 100%; min-width: 0; margin: 0; padding: 88px clamp(20px, 6vw, 36px) 32px; border: 0; background: transparent; box-shadow: none; backdrop-filter: none; }
+  .garden-crest { display: none; }
+  .profile-header { grid-template-columns: 90px minmax(0,1fr); column-gap: 18px; row-gap: 14px; padding: 0 0 18px; }
+  .location-badge { grid-column: 2; align-self: start; gap: 5px; font-size: 10px; }
+  .location-badge .material-symbols-sharp { font-size: 14px; }
+  .card-rule { margin: 18px 0 12px; padding-top: 16px; }
+  .social-links { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; border: 0; }
+  .social-link { min-width: 0; min-height: 62px; grid-template-columns: 22px minmax(0, 1fr) 14px; gap: 10px; padding: 12px; border: 1px solid rgba(176,154,190,.35); background: rgba(19,13,25,.7); }
+  .social-link:last-child { grid-column: 1 / -1; }
+  .social-copy strong { font-size: 10px; }
+  .social-copy small { font-size: 10px; }
+  .panel { margin-top: 22px; padding: 16px 0 0; border: 0; border-top: 1px solid rgba(176,154,190,.32); background: transparent; box-shadow: none; }
+  .music-panel { padding: 16px 0 0; }
+  .music-panel::before, .panel::after { content: none; }
+  .player-layout { grid-template-columns: minmax(0, 1fr) 48px; gap: 10px; }
+  .track-row { grid-template-columns: 50px minmax(0, 1fr); gap: 12px; }
+  .play-button { width: 50px; height: 50px; }
+  .timeline-row { grid-template-columns: 31px minmax(0,1fr) 31px; gap: 6px; }
+  .github-heading h2 { font-size: 28px; }
+  .calendar { margin-top: 14px; }
+  .languages { margin-top: 14px; }
+  .card-footer { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(176,154,190,.25); }
+}
+@media (max-width: 360px) {
+  .identity-card { padding-inline: 18px; }
+  .social-link { gap: 7px; padding-inline: 9px; }
+  .social-copy small { font-size: 9px; }
+}
+
+/* The divider and section label have separate space. */
+.card-rule { padding-top: 16px; }
+@media (max-width: 720px) { .card-rule { padding-top: 16px; } }

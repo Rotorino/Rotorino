@@ -40,7 +40,7 @@ export default function App() {
   return (
     <main className="page-shell" onCopy={(event) => event.preventDefault()} onCut={(event) => event.preventDefault()}>
       {background ? <img className="page-background" src={background} alt="" onError={() => setBackground(null)} /> : null}
-      <div className="background-overlay" aria-hidden="true" />
+      <div className="background-overlay" aria-hidden="true" /><div className="garden-flower garden-flower-left" aria-hidden="true" /><div className="garden-flower garden-flower-right" aria-hidden="true" /><div className="garden-bouquet garden-bouquet-left" aria-hidden="true" /><div className="garden-bouquet garden-bouquet-right" aria-hidden="true" />
       <NeuralGlow />
       <CursorTrail />
       <CursorEffects />
@@ -58,7 +58,7 @@ export default function App() {
       </button>
 
       <article className={`identity-card${locked ? '' : ' is-unlocked'}`} inert={locked}>
-        <header className="profile-header">
+        <span className="garden-crest" aria-hidden="true">✧</span><header className="profile-header">
           <div className="avatar-frame">
             {avatar ? <img src={avatar} alt="Ritoka avatar" /> : <span>R</span>}
             <i aria-hidden="true" />
