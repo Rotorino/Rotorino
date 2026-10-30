@@ -1,5 +1,5 @@
 {
- "key": "739c5faa",
+ "key": "ebec2340",
  "stars": 6,
  "contributions": 33,
  "repos": 5,
@@ -133,9 +133,13 @@
    {
     "c": 0,
     "day": 29,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 30,
     "today": true
    },
-   null,
    null
   ]
  ],
