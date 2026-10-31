@@ -1,5 +1,5 @@
 {
- "key": "ebec2340",
+ "key": "71642081",
  "stars": 6,
  "contributions": 33,
  "repos": 5,
@@ -138,9 +138,13 @@
    {
     "c": 0,
     "day": 30,
-    "today": true
+    "today": false
    },
-   null
+   {
+    "c": 0,
+    "day": 31,
+    "today": true
+   }
   ]
  ],
  "streak": {
