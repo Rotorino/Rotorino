@@ -1,5 +1,5 @@
 {
- "key": "db158f03",
+ "key": "608d8c44",
  "stars": 6,
  "contributions": 33,
  "repos": 5,
@@ -113,9 +113,13 @@
    {
     "c": 0,
     "day": 1,
+    "today": false
+   },
+   {
+    "c": 0,
+    "day": 2,
     "today": true
    },
-   null,
    null,
    null,
    null,
