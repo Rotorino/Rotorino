@@ -1,8 +1,8 @@
 {
- "key": "6b7d86c6",
+ "key": "b91455ac",
  "stars": 6,
- "contributions": 33,
- "repos": 5,
+ "contributions": 36,
+ "repos": 6,
  "followers": 0,
  "languages": [
   [
@@ -11,19 +11,19 @@
   ],
   [
    "TypeScript",
-   111134
+   145328
   ],
   [
    "CSS",
-   74251
-  ],
-  [
-   "JavaScript",
-   41881
+   59342
   ],
   [
    "HTML",
-   41218
+   21921
+  ],
+  [
+   "JavaScript",
+   19894
   ],
   [
    "Vue",
@@ -126,7 +126,7 @@
     "today": false
    },
    {
-    "c": 0,
+    "c": 3,
     "day": 4,
     "today": true
    },
@@ -136,7 +136,7 @@
   ]
  ],
  "streak": {
-  "current": 0,
+  "current": 1,
   "longest": 2
  },
  "pins": [],
@@ -147,7 +147,7 @@
    "text": "Bonbons Pauvres - учебный full-stack проект",
    "fork": false,
    "stars": 2,
-   "language": "JavaScript",
+   "language": "TypeScript",
    "topics": []
   },
   {
@@ -175,6 +175,15 @@
    "fork": false,
    "stars": 2,
    "language": "Python",
+   "topics": []
+  },
+  {
+   "name": "Markovski-Uzhas",
+   "url": "https://github.com/Rotorino/Markovski-Uzhas",
+   "text": "",
+   "fork": false,
+   "stars": 0,
+   "language": null,
    "topics": []
   },
   {
