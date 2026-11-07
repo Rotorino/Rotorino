@@ -1,6 +1,6 @@
 {
- "key": "40bf2a66",
- "stars": 6,
+ "key": "66c0d589",
+ "stars": 3,
  "contributions": 38,
  "repos": 6,
  "followers": 1,
@@ -158,7 +158,7 @@
    "url": "https://github.com/Rotorino/Bonbons-Pauvres",
    "text": "Bonbons Pauvres - учебный full-stack проект",
    "fork": false,
-   "stars": 2,
+   "stars": 1,
    "language": "TypeScript",
    "topics": []
   },
@@ -167,7 +167,7 @@
    "url": "https://github.com/Rotorino/RussianCM",
    "text": "Работа с локалью RuMC inc.",
    "fork": true,
-   "stars": 2,
+   "stars": 1,
    "language": "C#",
    "topics": []
   },
@@ -176,7 +176,7 @@
    "url": "https://github.com/Rotorino/Shmal",
    "text": "Homework for TOP",
    "fork": false,
-   "stars": 2,
+   "stars": 1,
    "language": "CSS",
    "topics": []
   },
@@ -185,7 +185,7 @@
    "url": "https://github.com/Rotorino/Fabriq",
    "text": "Fabriq — это модульное Python-приложение для дискретно-событийного моделирования производственной линии.",
    "fork": false,
-   "stars": 2,
+   "stars": 1,
    "language": "Python",
    "topics": []
   },
