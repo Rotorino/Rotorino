@@ -1,7 +1,7 @@
 {
- "key": "26629884",
+ "key": "16d0592",
  "stars": 3,
- "contributions": 39,
+ "contributions": 40,
  "repos": 6,
  "followers": 1,
  "languages": [
@@ -116,7 +116,7 @@
     "today": false
    },
    {
-    "c": 1,
+    "c": 3,
     "day": 16,
     "today": true
    },
@@ -143,15 +143,6 @@
    "topics": []
   },
   {
-   "name": "RussianCM",
-   "url": "https://github.com/Rotorino/RussianCM",
-   "text": "Работа с локалью RuMC inc.",
-   "fork": true,
-   "stars": 1,
-   "language": "C#",
-   "topics": []
-  },
-  {
    "name": "Shmal",
    "url": "https://github.com/Rotorino/Shmal",
    "text": "Homework for TOP",
@@ -167,6 +158,15 @@
    "fork": false,
    "stars": 1,
    "language": "Python",
+   "topics": []
+  },
+  {
+   "name": "RussianCM",
+   "url": "https://github.com/Rotorino/RussianCM",
+   "text": "Official Russian Fork of Colonial Marines: Universe",
+   "fork": true,
+   "stars": 0,
+   "language": "C#",
    "topics": []
   },
   {
